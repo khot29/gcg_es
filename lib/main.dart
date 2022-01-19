@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 // import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:gcg_es/myaccounts_tabs/myacc_Main.dart';
 
 import 'login.dart';
 import 'register.dart';
@@ -331,10 +332,6 @@ class _homepageState extends State<homepage> {
         ),
       ),
 
-      //section 1 starts
-
-      //section 1 ends
-
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.fromLTRB(0.0, 30.0, 0.0, 0.0),
@@ -403,7 +400,7 @@ class _homepageState extends State<homepage> {
               title: Text("My Account"),
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => homepage()));
+                    MaterialPageRoute(builder: (context) => myaccounts()));
               },
             ),
             //myaccount details starts
@@ -416,56 +413,56 @@ class _homepageState extends State<homepage> {
                     title: Text("Dashboard"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Edit Profile"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Order History"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Invoice History"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Shipment History"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Address Book"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Change Password"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Logout"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                 ],
