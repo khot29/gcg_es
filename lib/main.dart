@@ -5,7 +5,15 @@ import 'package:flutter/material.dart';
 // import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:gcg_es/myaccounts_tabs/address.dart';
+import 'package:gcg_es/myaccounts_tabs/dashboard.dart';
+import 'package:gcg_es/myaccounts_tabs/edit_profile.dart';
+import 'package:gcg_es/myaccounts_tabs/enquiryhistory.dart';
+import 'package:gcg_es/myaccounts_tabs/invoicehistory.dart';
+import 'package:gcg_es/myaccounts_tabs/logout.dart';
 import 'package:gcg_es/myaccounts_tabs/myacc_Main.dart';
+import 'package:gcg_es/myaccounts_tabs/password.dart';
+import 'package:gcg_es/myaccounts_tabs/shippinghistory.dart';
 
 import 'login.dart';
 import 'register.dart';
@@ -252,7 +260,7 @@ class _homepageState extends State<homepage> {
             ),
             //featured products
             Container(
-              color: Colors.redAccent,
+              color: Color.fromARGB(255, 5, 33, 77),
               child: Column(
                 children: [
                   Row(
@@ -260,8 +268,14 @@ class _homepageState extends State<homepage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Featured Products"),
-                      Text("View all"),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Featured Products",style: TextStyle(color: Colors.white),),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("View all", style: TextStyle(color: Colors.white),),
+                      ),
                     ],
                   ),
                   Row(
@@ -271,7 +285,11 @@ class _homepageState extends State<homepage> {
                         child: Container(
                           height: 200,
                           width: MediaQuery.of(context).size.width - 20,
-                          child: Text("Products to be display"),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text("Products to be display",
+                                style: TextStyle(color: Colors.white),),
+                          ),
                           decoration: BoxDecoration(
                               border: Border.all(
                                   color: Color(0xFFFFD333),
@@ -291,16 +309,27 @@ class _homepageState extends State<homepage> {
             ),
             //Bestsellers
             Container(
-              color: Colors.redAccent,
+              color: Color.fromARGB(255, 7, 18, 36),
               child: Column(
                 children: [
                   Row(
-                    
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                    Text("Featured Products"),
-                    Text("View all"),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Bestsellers",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "View all",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
                     ],
                   ),
                   Row(
@@ -310,7 +339,13 @@ class _homepageState extends State<homepage> {
                         child: Container(
                           height: 200,
                           width: MediaQuery.of(context).size.width - 20,
-                          child: Text("Products to be display"),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              "Products to be display",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
                           decoration: BoxDecoration(
                               border: Border.all(
                                   color: Color(0xFFFFD333),
@@ -413,56 +448,56 @@ class _homepageState extends State<homepage> {
                     title: Text("Dashboard"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
+                          MaterialPageRoute(builder: (context) => dashboard()));
                     },
                   ),
                   ListTile(
                     title: Text("Edit Profile"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
+                          MaterialPageRoute(builder: (context) => editprofile()));
                     },
                   ),
                   ListTile(
-                    title: Text("Order History"),
+                    title: Text("Enquiry History"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
+                          MaterialPageRoute(builder: (context) => enquiryhistory()));
                     },
                   ),
                   ListTile(
                     title: Text("Invoice History"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
+                          MaterialPageRoute(builder: (context) => invoicehistory()));
                     },
                   ),
                   ListTile(
                     title: Text("Shipment History"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
+                          MaterialPageRoute(builder: (context) => shippinghistory()));
                     },
                   ),
                   ListTile(
                     title: Text("Address Book"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
+                          MaterialPageRoute(builder: (context) => address()));
                     },
                   ),
                   ListTile(
                     title: Text("Change Password"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
+                          MaterialPageRoute(builder: (context) => password()));
                     },
                   ),
                   ListTile(
                     title: Text("Logout"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
+                          MaterialPageRoute(builder: (context) => logout()));
                     },
                   ),
                 ],
