@@ -448,56 +448,56 @@ class _homepageState extends State<homepage> {
                     title: Text("Dashboard"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => dashboard()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Edit Profile"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => editprofile()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Enquiry History"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => enquiryhistory()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Invoice History"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => invoicehistory()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Shipment History"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => shippinghistory()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Address Book"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => address()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Change Password"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => password()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                   ListTile(
                     title: Text("Logout"),
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => logout()));
+                          MaterialPageRoute(builder: (context) => myaccounts()));
                     },
                   ),
                 ],
