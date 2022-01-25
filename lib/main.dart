@@ -180,101 +180,106 @@ class _homepageState extends State<homepage> {
               ),
             ),
             // 4 banners
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                Container(
-                  height: 100,
-                  color: Colors.white60,
-                  child: Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Column(
-                      children: [
-                        Icon(Icons.local_shipping_outlined),
-                        Column(
-                          children: [
-                            Text("Free Shipping"),
-                            Text("For orders from 50"),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Container(
-                  height: 100,
-                  color: Colors.white60,
-                  child: Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Column(
-                      children: [
-                        Icon(Icons.call_sharp),
-                        Column(
-                          children: [
-                            Text("Support 24/7"),
-                            Text("Call us anytime"),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Container(
-                  height: 100,
-                  color: Colors.white60,
-                  child: Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Column(
-                      children: [
-                        Icon(Icons.payment_sharp),
-                        Column(
-                          children: [
-                            Text("100% Safety"),
-                            Text("Only secure Payments"),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Container(
-                  height: 100,
-                  color: Colors.white60,
-                  child: Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Column(
-                      children: [
-                        Icon(Icons.local_offer_sharp),
-                        Column(
-                          children: [
-                            Text("Hot Offers"),
-                            Text("Disounts upto 90%"),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            // Column(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   mainAxisSize: MainAxisSize.min,
+            //   children: <Widget>[
+            //     Container(
+            //       height: 100,
+            //       color: Colors.white60,
+            //       child: Padding(
+            //         padding: const EdgeInsets.all(4.0),
+            //         child: Column(
+            //           children: [
+            //             Icon(Icons.local_shipping_outlined),
+            //             Column(
+            //               children: [
+            //                 Text("Free Shipping"),
+            //                 Text("For orders from 50"),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //       ),
+            //     ),
+            //     Container(
+            //       height: 100,
+            //       color: Colors.white60,
+            //       child: Padding(
+            //         padding: const EdgeInsets.all(4.0),
+            //         child: Column(
+            //           children: [
+            //             Icon(Icons.call_sharp),
+            //             Column(
+            //               children: [
+            //                 Text("Support 24/7"),
+            //                 Text("Call us anytime"),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //       ),
+            //     ),
+            //     Container(
+            //       height: 100,
+            //       color: Colors.white60,
+            //       child: Padding(
+            //         padding: const EdgeInsets.all(4.0),
+            //         child: Column(
+            //           children: [
+            //             Icon(Icons.payment_sharp),
+            //             Column(
+            //               children: [
+            //                 Text("100% Safety"),
+            //                 Text("Only secure Payments"),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //       ),
+            //     ),
+            //     Container(
+            //       height: 100,
+            //       color: Colors.white60,
+            //       child: Padding(
+            //         padding: const EdgeInsets.all(4.0),
+            //         child: Column(
+            //           children: [
+            //             Icon(Icons.local_offer_sharp),
+            //             Column(
+            //               children: [
+            //                 Text("Hot Offers"),
+            //                 Text("Disounts upto 90%"),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //       ),
+            //     ),
+            //   ],
+            // ),
             //featured products
             Container(
-              color: Color.fromARGB(255, 5, 33, 77),
+              color: Color.fromARGB(255, 255, 255, 255),
               child: Column(
                 children: [
                   Row(
-                    
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text("Featured Products",style: TextStyle(color: Colors.white),),
+                        child: Text(
+                          "Featured Products",
+                          style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text("View all", style: TextStyle(color: Colors.white),),
+                        child: Text(
+                          "View all",
+                          style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+                        ),
                       ),
                     ],
                   ),
@@ -287,8 +292,11 @@ class _homepageState extends State<homepage> {
                           width: MediaQuery.of(context).size.width - 20,
                           child: Padding(
                             padding: const EdgeInsets.all(16.0),
-                            child: Text("Products to be display",
-                                style: TextStyle(color: Colors.white),),
+                            child: Text(
+                              "Products to be display",
+                              style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
                           ),
                           decoration: BoxDecoration(
                               border: Border.all(
@@ -309,7 +317,7 @@ class _homepageState extends State<homepage> {
             ),
             //Bestsellers
             Container(
-              color: Color.fromARGB(255, 7, 18, 36),
+              color: Color.fromARGB(255, 255, 255, 255),
               child: Column(
                 children: [
                   Row(
@@ -320,14 +328,14 @@ class _homepageState extends State<homepage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "Bestsellers",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "View all",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                         ),
                       ),
                     ],
@@ -343,7 +351,8 @@ class _homepageState extends State<homepage> {
                             padding: const EdgeInsets.all(16.0),
                             child: Text(
                               "Products to be display",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
                             ),
                           ),
                           decoration: BoxDecoration(
@@ -366,11 +375,17 @@ class _homepageState extends State<homepage> {
           ],
         ),
       ),
-
       drawer: Drawer(
         child: ListView(
-          padding: EdgeInsets.fromLTRB(0.0, 30.0, 0.0, 0.0),
-          children: [
+          // padding: EdgeInsets.fromLTRB(0.0, 30.0, 0.0, 0.0),
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              decoration: BoxDecoration(color: Colors.amberAccent),  
+              // currentAccountPicture: CircleAvatar(backgroundImage: ,),
+              accountName: Text("Owais Patel"),
+              accountEmail: Text("owaispatel75@gmail.com")
+            ),
+            
             ListTile(
               title: Text(
                 "Menu",
@@ -396,113 +411,154 @@ class _homepageState extends State<homepage> {
                     MaterialPageRoute(builder: (context) => homepage()));
               },
             ),
-            ListTile(
+            ExpansionTile(
               title: Text("All Categories"),
+              children: <Widget>[
+                Text("Printer"),
+                SizedBox(height: 20),
+                Text("Toners"),
+                SizedBox(height: 20),
+                Text("Service"),
+                SizedBox(height: 20),
+              ],
+            ),
+            // Padding(
+            //   padding: const EdgeInsets.fromLTRB(30.0, 0.0, 0.0, 0.0),
+            //   child: Column(
+            //     children: [
+            //       ListTile(
+            //         title: Text("Printer"),
+            //         onTap: () {
+            //           Navigator.push(context,
+            //               MaterialPageRoute(builder: (context) => homepage()));
+            //         },
+            //       ),
+            //       ListTile(
+            //         title: Text("Toners"),
+            //         onTap: () {
+            //           Navigator.push(context,
+            //               MaterialPageRoute(builder: (context) => homepage()));
+            //         },
+            //       ),
+            //       ListTile(
+            //         title: Text("Service"),
+            //         onTap: () {
+            //           Navigator.push(context,
+            //               MaterialPageRoute(builder: (context) => homepage()));
+            //         },
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            InkWell(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => homepage()));
+                  MaterialPageRoute(builder: (context) => myaccounts()));
               },
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(30.0, 0.0, 0.0, 0.0),
-              child: Column(
-                children: [
-                  ListTile(
-                    title: Text("Printer"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
-                    },
-                  ),
-                  ListTile(
-                    title: Text("Toners"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
-                    },
-                  ),
-                  ListTile(
-                    title: Text("Service"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => homepage()));
-                    },
-                  ),
+              child: ExpansionTile(
+                title: Text("My Accounts"),
+                children: <Widget>[
+                  Text("Dashboard"),
+                  SizedBox(height: 30),
+                  Text("Edit Profile"),
+                  SizedBox(height: 30),
+                  Text("Enqiry History"),
+                  SizedBox(height: 30),
+                  Text("Invoice History"),
+                  SizedBox(height: 30),
+                  Text("Shipment History"),
+                  SizedBox(height: 30),
+                  Text("Address Book"),
+                  SizedBox(height:30),
+                  Text("Change password"),
+                  SizedBox(height: 30),
+                  Text("Logout"),
+                  SizedBox(height: 30),
+                  
                 ],
               ),
-            ),
-            ListTile(
-              title: Text("My Account"),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => myaccounts()));
-              },
             ),
             //myaccount details starts
 
-            Padding(
-              padding: const EdgeInsets.fromLTRB(30.0, 0.0, 0.0, 0.0),
-              child: Column(
-                children: [
-                  ListTile(
-                    title: Text("Dashboard"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  ),
-                  ListTile(
-                    title: Text("Edit Profile"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  ),
-                  ListTile(
-                    title: Text("Enquiry History"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  ),
-                  ListTile(
-                    title: Text("Invoice History"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  ),
-                  ListTile(
-                    title: Text("Shipment History"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  ),
-                  ListTile(
-                    title: Text("Address Book"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  ),
-                  ListTile(
-                    title: Text("Change Password"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  ),
-                  ListTile(
-                    title: Text("Logout"),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  ),
-                ],
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.fromLTRB(30.0, 0.0, 0.0, 0.0),
+            //   child: Column(
+            //     children: [
+            //       ListTile(
+            //         title: Text("Dashboard"),
+            //         onTap: () {
+            //           Navigator.push(
+            //               context,
+            //               MaterialPageRoute(
+            //                   builder: (context) => myaccounts()));
+            //         },
+            //       ),
+            //       ListTile(
+            //         title: Text("Edit Profile"),
+            //         onTap: () {
+            //           Navigator.push(
+            //               context,
+            //               MaterialPageRoute(
+            //                   builder: (context) => myaccounts()));
+            //         },
+            //       ),
+            //       ListTile(
+            //         title: Text("Enquiry History"),
+            //         onTap: () {
+            //           Navigator.push(
+            //               context,
+            //               MaterialPageRoute(
+            //                   builder: (context) => myaccounts()));
+            //         },
+            //       ),
+            //       ListTile(
+            //         title: Text("Invoice History"),
+            //         onTap: () {
+            //           Navigator.push(
+            //               context,
+            //               MaterialPageRoute(
+            //                   builder: (context) => myaccounts()));
+            //         },
+            //       ),
+            //       ListTile(
+            //         title: Text("Shipment History"),
+            //         onTap: () {
+            //           Navigator.push(
+            //               context,
+            //               MaterialPageRoute(
+            //                   builder: (context) => myaccounts()));
+            //         },
+            //       ),
+            //       ListTile(
+            //         title: Text("Address Book"),
+            //         onTap: () {
+            //           Navigator.push(
+            //               context,
+            //               MaterialPageRoute(
+            //                   builder: (context) => myaccounts()));
+            //         },
+            //       ),
+            //       ListTile(
+            //         title: Text("Change Password"),
+            //         onTap: () {
+            //           Navigator.push(
+            //               context,
+            //               MaterialPageRoute(
+            //                   builder: (context) => myaccounts()));
+            //         },
+            //       ),
+            //       ListTile(
+            //         title: Text("Logout"),
+            //         onTap: () {
+            //           Navigator.push(
+            //               context,
+            //               MaterialPageRoute(
+            //                   builder: (context) => myaccounts()));
+            //         },
+            //       ),
+            //     ],
+            //   ),
+            // ),
 
             //myaccount details ends
             ListTile(
