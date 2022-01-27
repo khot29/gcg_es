@@ -3,9 +3,17 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "75e764f70cd6412dadf5964dd32e7d67",
+  "assets/AssetManifest.json": "52569417dd60df5af252b3e7242c6350",
 "assets/assets/images/banner/banner.jpg": "b500cc972c33ce0cabc1a347438ba684",
 "assets/assets/images/logo.png": "253393455b33381e0036789c3ec19682",
+"assets/assets/images/products/P1.png": "c91c4343bd564d7af76c1016a332c15f",
+"assets/assets/images/products/P2235dn.png": "b2c150c625d92cd4935a4dd44a067110",
+"assets/assets/images/products/P2235dw(11).png": "55b11593733b330ae22a94260449700a",
+"assets/assets/images/products/P6230cdn.png": "848622a0d5779f3b520a88e4210b0bbc",
+"assets/assets/images/products/P7240cdn(1).png": "b3baae23dc4b39e09c950b652d006482",
+"assets/assets/images/products/Picture.png": "1d65fa0a835bf2d21e32ce8d3bd603a1",
+"assets/assets/images/products/TASKalfa2554ci.png": "6b0cecfecb5deaea11c3e1ceabc9bfa5",
+"assets/assets/images/products/WorkForceProWF-C5290DW.jpg": "9bcec0544fdbe0f8a1e482fe7af79214",
 "assets/assets/images/profilepic.png": "95c74e73a0802296ef631dd71dfa09d2",
 "assets/assets/images/slider/GCG_ES_Slider-1.jpg": "d6515e8309a1d49daea9669fda681bce",
 "assets/assets/images/slider/GCG_ES_Slider-4-crop.jpg": "c80d72a943c514a16b30f8e8d91b9552",
@@ -23,9 +31,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "72f33feb5edfbcd69c236f75b0ebb2b7",
-"/": "72f33feb5edfbcd69c236f75b0ebb2b7",
-"main.dart.js": "0c8b7771849fa8627d0d3d8ed10f6fda",
+"index.html": "0bbc8e898ce02bf3c481547c4669dc1f",
+"/": "0bbc8e898ce02bf3c481547c4669dc1f",
+"main.dart.js": "6dd940afb615661c55e4f5d47ab6f151",
 "manifest.json": "2fe559adc5fcce46396f80881e5af5ba",
 "version.json": "0fc346265a4cee2dea2a8a2de8c604e7"
 };

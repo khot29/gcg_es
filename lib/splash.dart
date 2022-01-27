@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:gcg_es/main.dart';
+import 'package:gcg_es/shop.dart';
 
 class splash extends StatefulWidget {
   const splash({Key? key}) : super(key: key);
