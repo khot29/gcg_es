@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
 
       // initialRoute: '/shop',//changes to be made in future
       // routes: {
-      //   '/': (context) => const homepage(),
+      //   '/': (context) => const splash(),
       //   '/shop': (context) => const shop(),
       // },
     );

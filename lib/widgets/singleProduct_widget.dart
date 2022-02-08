@@ -24,13 +24,17 @@ class SingleProductWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
           ),
           child: Column(
+          
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              
               Expanded(
+                
                 child: Container(
-                  width: double.infinity,
-                  alignment: Alignment.topRight,
+                  
+                  width: 500,//double.infinity,
+                  alignment: Alignment.topCenter,
                   decoration: BoxDecoration(
                       color: Colors.transparent,
                       borderRadius: BorderRadius.circular(10),
