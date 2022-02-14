@@ -6,6 +6,9 @@ import 'package:flutter/material.dart';
 // import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:gcg_es/catergory%20drawer/printer.dart';
+import 'package:gcg_es/catergory%20drawer/service.dart';
+import 'package:gcg_es/catergory%20drawer/toners.dart';
 import 'package:gcg_es/contact.dart';
 import 'package:gcg_es/models/product.dart';
 import 'package:gcg_es/myaccounts_tabs/address.dart';
@@ -69,9 +72,14 @@ class _MyAppState extends State<MyApp> {
 }
 
 ////new homepage
-class homepage extends StatelessWidget {
+class homepage extends StatefulWidget {
   const homepage({Key? key}) : super(key: key);
 
+  @override
+  State<homepage> createState() => _homepageState();
+}
+
+class _homepageState extends State<homepage> {
   press() {}
 
   @override
@@ -132,92 +140,91 @@ class homepage extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         children: [
           Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12.0),
-              child: GridView.builder(
-                  shrinkWrap: true,
-                  primary: true,
-                  itemCount: demoProducts.length,
-                  physics: NeverScrollableScrollPhysics(),
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 0.7,
-                  ),
-                  itemBuilder: (context, index) {
-                    var data = demoProducts[index];
-                    return SingleProductWidget(
-                        productName: data.productName,
-                        productImage: data.productImage,
-                        productPrice: data.productPrice,
-                        onPressed: () {});
-                    // GestureDetector(
-                    //     onTap: () => press(),
-                    //     child: Container(
-                    //       margin: EdgeInsets.all(10.0),
-                    //       decoration: BoxDecoration(
-                    //         color: Colors.transparent,
-                    //         borderRadius: BorderRadius.circular(5),
-                    //       ),
-                    //       child: Column(
-                    //         mainAxisAlignment: MainAxisAlignment.start,
-                    //         crossAxisAlignment: CrossAxisAlignment.start,
-                    //         children: [
-                    //           Expanded(
-                    //             child: Container(
-                    //               width: double.infinity,
-                    //               alignment: Alignment.topRight,
-                    //               decoration: BoxDecoration(
-                    //                   color: Colors.black,
-                    //                   borderRadius:
-                    //                       BorderRadius.circular(10),
-                    //                   image: DecorationImage(
-                    //                     fit: BoxFit.cover,
-                    //                     image: NetworkImage(
-                    //                         "http://172.29.1.208:2018/assets/images/products/P6230cdn.png"),
-                    //                   )),
-                    //               child: IconButton(
-                    //                   onPressed: () {},
-                    //                   icon: Icon(
-                    //                     Icons.favorite,
-                    //                     size: 30,
-                    //                     color: Colors.amber,
-                    //                   )),
-                    //             ),
-                    //           ),
-                    //           Expanded(
-                    //               child: Padding(
-                    //             padding:
-                    //                 EdgeInsets.symmetric(horizontal: 20),
-                    //             child: Column(
-                    //               mainAxisAlignment:
-                    //                   MainAxisAlignment.spaceEvenly,
-                    //               crossAxisAlignment:
-                    //                   CrossAxisAlignment.start,
-                    //               children: [
-                    //                 Text(
-                    //                   "productName",
-                    //                   overflow: TextOverflow.ellipsis,
-                    //                   style: TextStyle(
-                    //                       fontWeight: FontWeight.bold),
-                    //                 ),
-                    //                 Row(
-                    //                   children: [
-                    //                     Text(
-                    //                       "productPrice",
-                    //                       overflow: TextOverflow.ellipsis,
-                    //                       style: TextStyle(
-                    //                           color: Colors.amber),
-                    //                     ),
-
-                    //                   ],
-                    //                 ),
-                    //               ],
-                    //             ),
-                    //           ))
-                    //         ],
-                    //       ),
-                    //     ));
-                  }
+            padding: EdgeInsets.symmetric(horizontal: 12.0),
+            child: GridView.builder(
+                shrinkWrap: true,
+                primary: true,
+                itemCount: demoProducts.length,
+                physics: NeverScrollableScrollPhysics(),
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  childAspectRatio: 0.7,
                 ),
+                itemBuilder: (context, index) {
+                  var data = demoProducts[index];
+                  return SingleProductWidget(
+                      productName: data.productName,
+                      productImage: data.productImage,
+                      productPrice: data.productPrice,
+                      onPressed: () {});
+                  // GestureDetector(
+                  //     onTap: () => press(),
+                  //     child: Container(
+                  //       margin: EdgeInsets.all(10.0),
+                  //       decoration: BoxDecoration(
+                  //         color: Colors.transparent,
+                  //         borderRadius: BorderRadius.circular(5),
+                  //       ),
+                  //       child: Column(
+                  //         mainAxisAlignment: MainAxisAlignment.start,
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Expanded(
+                  //             child: Container(
+                  //               width: double.infinity,
+                  //               alignment: Alignment.topRight,
+                  //               decoration: BoxDecoration(
+                  //                   color: Colors.black,
+                  //                   borderRadius:
+                  //                       BorderRadius.circular(10),
+                  //                   image: DecorationImage(
+                  //                     fit: BoxFit.cover,
+                  //                     image: NetworkImage(
+                  //                         "http://172.29.1.208:2018/assets/images/products/P6230cdn.png"),
+                  //                   )),
+                  //               child: IconButton(
+                  //                   onPressed: () {},
+                  //                   icon: Icon(
+                  //                     Icons.favorite,
+                  //                     size: 30,
+                  //                     color: Colors.amber,
+                  //                   )),
+                  //             ),
+                  //           ),
+                  //           Expanded(
+                  //               child: Padding(
+                  //             padding:
+                  //                 EdgeInsets.symmetric(horizontal: 20),
+                  //             child: Column(
+                  //               mainAxisAlignment:
+                  //                   MainAxisAlignment.spaceEvenly,
+                  //               crossAxisAlignment:
+                  //                   CrossAxisAlignment.start,
+                  //               children: [
+                  //                 Text(
+                  //                   "productName",
+                  //                   overflow: TextOverflow.ellipsis,
+                  //                   style: TextStyle(
+                  //                       fontWeight: FontWeight.bold),
+                  //                 ),
+                  //                 Row(
+                  //                   children: [
+                  //                     Text(
+                  //                       "productPrice",
+                  //                       overflow: TextOverflow.ellipsis,
+                  //                       style: TextStyle(
+                  //                           color: Colors.amber),
+                  //                     ),
+
+                  //                   ],
+                  //                 ),
+                  //               ],
+                  //             ),
+                  //           ))
+                  //         ],
+                  //       ),
+                  //     ));
+                }),
           ),
         ],
       ),
@@ -259,15 +266,32 @@ class homepage extends StatelessWidget {
               },
             ),
             ExpansionTile(
+              textColor: Colors.amber,
+              iconColor: Colors.amber,
               expandedAlignment: Alignment.center,
               title: Text("All Categories"),
               children: <Widget>[
                 // Padding(padding: EdgeInsets.all(16.0)),
-                Text("Printer"),
+                InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => printer()));
+                    },
+                    child: Text("Printer")),
                 SizedBox(height: 30),
-                Text("Toners"),
+                InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => toners()));
+                    },
+                    child: Text("Toners")),
                 SizedBox(height: 30),
-                Text("Service"),
+                InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => service()));
+                    },
+                    child: Text("Service")),
                 SizedBox(height: 30),
               ],
             ),
@@ -299,32 +323,72 @@ class homepage extends StatelessWidget {
             //     ],
             //   ),
             // ),
-            InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => myaccounts()));
-              },
-              child: ExpansionTile(
-                title: Text("My Accounts"),
-                children: <Widget>[
-                  Text("Dashboard"),
-                  SizedBox(height: 30),
-                  Text("Edit Profile"),
-                  SizedBox(height: 30),
-                  Text("Enqiry History"),
-                  SizedBox(height: 30),
-                  Text("Invoice History"),
-                  SizedBox(height: 30),
-                  Text("Shipment History"),
-                  SizedBox(height: 30),
-                  Text("Address Book"),
-                  SizedBox(height: 30),
-                  Text("Change password"),
-                  SizedBox(height: 30),
-                  Text("Logout"),
-                  SizedBox(height: 30),
-                ],
-              ),
+            ExpansionTile(
+              textColor: Colors.amber,
+              iconColor: Colors.amber,
+              title: Text("My Accounts"),
+              children: <Widget>[
+                InkWell(
+                  onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myaccounts()));
+                    },
+                  child: Text("Dashboard")),
+                SizedBox(height: 30),
+                InkWell(
+                  onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myaccounts()));
+                    },
+                  child: Text("Edit Profile")),
+                SizedBox(height: 30),
+                InkWell(
+                  onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myaccounts()));
+                    },
+                  child: Text("Enqiry History")),
+                SizedBox(height: 30),
+                InkWell(
+                  onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myaccounts()));
+                    },
+                  child: Text("Invoice History")),
+                SizedBox(height: 30),
+                InkWell(
+                  onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myaccounts()));
+                    },
+                  child: Text("Shipment History")),
+                SizedBox(height: 30),
+                InkWell(
+                  onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => myaccounts()));
+                    },
+                  child: Text("Address Book")),
+                SizedBox(height: 30),
+                InkWell(
+                  onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myaccounts()));
+                    },
+                  child: Text("Change password",style: TextStyle(backgroundColor: Colors.transparent),)),
+                SizedBox(height: 30),
+                InkWell(
+                  onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => homepage()));
+                    },
+                  child: Text("Logout")),
+                SizedBox(height: 30),
+              ],
             ),
             //myaccount details starts
 

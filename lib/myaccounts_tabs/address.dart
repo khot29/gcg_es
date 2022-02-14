@@ -25,12 +25,12 @@ class address extends StatelessWidget {
                   onPressed: () {},
                   icon: Icon(Icons.add),
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text("Add New"),
-                  style: TextButton.styleFrom(
-                      backgroundColor: Color.fromARGB(217, 78, 78, 75)),
-                ),
+                // ElevatedButton(
+                //   onPressed: () {},
+                //   child: Text("Add New"),
+                //   style: TextButton.styleFrom(
+                //       backgroundColor: Color.fromARGB(217, 78, 78, 75)),
+                // ),
               ],
             ),
           ),

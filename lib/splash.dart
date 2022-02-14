@@ -15,6 +15,7 @@ class _splashState extends State<splash> {
   void initState() {
     super.initState();
     _navigatetohome();
+    
   }
 
   _navigatetohome() async {
