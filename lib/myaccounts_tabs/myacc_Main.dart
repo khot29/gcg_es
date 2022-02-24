@@ -1,4 +1,4 @@
-import 'dart:html';
+// import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -21,10 +21,29 @@ class myaccounts extends StatefulWidget {
 }
 
 class _myaccountsState extends State<myaccounts> {
+
+  late TabController _controller;
+  int _selectedIndex = 0;
+
+  void initState() {
+    super.initState();
+  //   _controller = TabController(length: 8, vsync: this._selectedIndex);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 8,
+      
+      
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xffffd333),
@@ -39,6 +58,7 @@ class _myaccountsState extends State<myaccounts> {
             ],
           ),
           bottom: TabBar(
+            controller: _controller,
             isScrollable: true,
             tabs: [
             Tab(text: "Dashboard"),
@@ -86,7 +106,9 @@ class _myaccountsState extends State<myaccounts> {
             ),
           ],
         ),
-        body: TabBarView(children: [
+        body: TabBarView(
+          controller: _controller,
+          children: [
           dashboard(),
           editprofile(),
           enquiryhistory(),

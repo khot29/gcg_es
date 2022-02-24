@@ -79,73 +79,73 @@ class _printerState extends State<printer> {
                       productImage: data.productImage,
                       productPrice: data.productPrice,
                       onPressed: () {});
-                  // GestureDetector(
-                  //     onTap: () => press(),
-                  //     child: Container(
-                  //       margin: EdgeInsets.all(10.0),
-                  //       decoration: BoxDecoration(
-                  //         color: Colors.transparent,
-                  //         borderRadius: BorderRadius.circular(5),
-                  //       ),
-                  //       child: Column(
-                  //         mainAxisAlignment: MainAxisAlignment.start,
-                  //         crossAxisAlignment: CrossAxisAlignment.start,
-                  //         children: [
-                  //           Expanded(
-                  //             child: Container(
-                  //               width: double.infinity,
-                  //               alignment: Alignment.topRight,
-                  //               decoration: BoxDecoration(
-                  //                   color: Colors.black,
-                  //                   borderRadius:
-                  //                       BorderRadius.circular(10),
-                  //                   image: DecorationImage(
-                  //                     fit: BoxFit.cover,
-                  //                     image: NetworkImage(
-                  //                         "http://172.29.1.208:2018/assets/images/products/P6230cdn.png"),
-                  //                   )),
-                  //               child: IconButton(
-                  //                   onPressed: () {},
-                  //                   icon: Icon(
-                  //                     Icons.favorite,
-                  //                     size: 30,
-                  //                     color: Colors.amber,
-                  //                   )),
-                  //             ),
-                  //           ),
-                  //           Expanded(
-                  //               child: Padding(
-                  //             padding:
-                  //                 EdgeInsets.symmetric(horizontal: 20),
-                  //             child: Column(
-                  //               mainAxisAlignment:
-                  //                   MainAxisAlignment.spaceEvenly,
-                  //               crossAxisAlignment:
-                  //                   CrossAxisAlignment.start,
-                  //               children: [
-                  //                 Text(
-                  //                   "productName",
-                  //                   overflow: TextOverflow.ellipsis,
-                  //                   style: TextStyle(
-                  //                       fontWeight: FontWeight.bold),
-                  //                 ),
-                  //                 Row(
-                  //                   children: [
-                  //                     Text(
-                  //                       "productPrice",
-                  //                       overflow: TextOverflow.ellipsis,
-                  //                       style: TextStyle(
-                  //                           color: Colors.amber),
-                  //                     ),
+                  GestureDetector(
+                      // onTap: () => press(),
+                      child: Container(
+                        margin: EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Container(
+                                width: double.infinity,
+                                alignment: Alignment.topRight,
+                                decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius:
+                                        BorderRadius.circular(10),
+                                    image: DecorationImage(
+                                      fit: BoxFit.cover,
+                                      image: NetworkImage(
+                                          "http://172.29.1.208:2018/assets/images/products/P6230cdn.png"),
+                                    )),
+                                child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.favorite,
+                                      size: 30,
+                                      color: Colors.amber,
+                                    )),
+                              ),
+                            ),
+                            Expanded(
+                                child: Padding(
+                              padding:
+                                  EdgeInsets.symmetric(horizontal: 20),
+                              child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                crossAxisAlignment:
+                                    CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "productName",
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "productPrice",
+                                        overflow: TextOverflow.ellipsis,
+                                        style: TextStyle(
+                                            color: Colors.amber),
+                                      ),
 
-                  //                   ],
-                  //                 ),
-                  //               ],
-                  //             ),
-                  //           ))
-                  //         ],
-                  //       ),
-                  //     ));
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ))
+                          ],
+                        ),
+                      ));
                 }),
           ),
         ],
@@ -153,3 +153,4 @@ class _printerState extends State<printer> {
     );
   }
 }
+

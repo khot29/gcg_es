@@ -31,83 +31,83 @@ List<Product> demoProducts = [
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 60.00,
+    productPrice: 1.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 20.00,
+    productPrice: 2.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 40.00,
+    productPrice: 3.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 50.00,
+    productPrice: 4.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 87.00,
+    productPrice: 5.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 75.00,
+    productPrice: 6.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 98.00,
+    productPrice: 7.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 9.00,
+    productPrice: 8.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 85.00,
+    productPrice: 9.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 80.00,
+    productPrice: 10.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 45.00,
+    productPrice: 11.0,
   ),
   Product(
     productImage: "assets/images/products/P1.png",
     productName: "Wireless Controller for PS4™",
-    productPrice: 35.00,
+    productPrice: 12.0,
   ),
-  Product(
-    productImage: "assets/images/products/P1.png",
-    productName: "Wireless Controller for PS4™",
-    productPrice: 30.00,
-  ),
-  Product(
-    productImage: "assets/images/products/P1.png",
-    productName: "Wireless Controller for PS4™",
-    productPrice: 25.00,
-  ),
-  Product(
-    productImage: "assets/images/products/P1.png",
-    productName: "Wireless Controller for PS4™",
-    productPrice: 15.00,
-  ),
-  Product(
-    productImage: "assets/images/products/P1.png",
-    productName: "Wireless Controller for PS4™",
-    productPrice: 10.00,
-  ),
+  // Product(
+  //   productImage: "assets/images/products/P1.png",
+  //   productName: "Wireless Controller for PS4™",
+  //   productPrice: 30.00,
+  // ),
+  // Product(
+  //   productImage: "assets/images/products/P1.png",
+  //   productName: "Wireless Controller for PS4™",
+  //   productPrice: 25.00,
+  // ),
+  // Product(
+  //   productImage: "assets/images/products/P1.png",
+  //   productName: "Wireless Controller for PS4™",
+  //   productPrice: 15.00,
+  // ),
+  // Product(
+  //   productImage: "assets/images/products/P1.png",
+  //   productName: "Wireless Controller for PS4™",
+  //   productPrice: 10.00,
+  // ),
 ];
 
 const String description =

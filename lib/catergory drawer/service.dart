@@ -76,7 +76,8 @@ class _serviceState extends State<service> {
                       productName: data.productName,
                       productImage: data.productImage,
                       productPrice: data.productPrice,
-                      onPressed: () {});
+                      onPressed: () {},
+                      );
                   // GestureDetector(
                   //     onTap: () => press(),
                   //     child: Container(

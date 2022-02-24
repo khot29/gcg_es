@@ -1,4 +1,4 @@
-import 'dart:html';
+// import 'dart:html';
 import 'dart:ui';
 
 import 'package:carousel_slider/carousel_slider.dart';
@@ -10,6 +10,7 @@ import 'package:gcg_es/catergory%20drawer/printer.dart';
 import 'package:gcg_es/catergory%20drawer/service.dart';
 import 'package:gcg_es/catergory%20drawer/toners.dart';
 import 'package:gcg_es/contact.dart';
+import 'package:gcg_es/detail_screen/detailscreen.dart';
 import 'package:gcg_es/models/product.dart';
 import 'package:gcg_es/myaccounts_tabs/address.dart';
 import 'package:gcg_es/myaccounts_tabs/dashboard.dart';
@@ -20,6 +21,7 @@ import 'package:gcg_es/myaccounts_tabs/logout.dart';
 import 'package:gcg_es/myaccounts_tabs/myacc_Main.dart';
 import 'package:gcg_es/myaccounts_tabs/password.dart';
 import 'package:gcg_es/myaccounts_tabs/shippinghistory.dart';
+import 'package:gcg_es/routes/routes.dart';
 import 'package:gcg_es/widgets/singleProduct_widget.dart';
 
 import 'login.dart';
@@ -156,7 +158,14 @@ class _homepageState extends State<homepage> {
                       productName: data.productName,
                       productImage: data.productImage,
                       productPrice: data.productPrice,
-                      onPressed: () {});
+                      onPressed: (){});
+                  // onPressed: () {
+                  //   // PageRouting.goToNextPage(
+                  //   //     context: context,
+                  //   //     navigateTo: detailscreen(
+                  //   //       data: data,
+                  //   //     ));
+                  // });
                   // GestureDetector(
                   //     onTap: () => press(),
                   //     child: Container(
@@ -329,64 +338,77 @@ class _homepageState extends State<homepage> {
               title: Text("My Accounts"),
               children: <Widget>[
                 InkWell(
-                  onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  child: Text("Dashboard")),
-                SizedBox(height: 30),
-                InkWell(
-                  onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  child: Text("Edit Profile")),
-                SizedBox(height: 30),
-                InkWell(
-                  onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  child: Text("Enqiry History")),
-                SizedBox(height: 30),
-                InkWell(
-                  onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  child: Text("Invoice History")),
-                SizedBox(height: 30),
-                InkWell(
-                  onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  child: Text("Shipment History")),
-                SizedBox(height: 30),
-                InkWell(
-                  onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => myaccounts()));
-                    },
-                  child: Text("Address Book")),
-                SizedBox(height: 30),
-                InkWell(
-                  onTap: () {
+                    onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => myaccounts()));
                     },
-                  child: Text("Change password",style: TextStyle(backgroundColor: Colors.transparent),)),
+                    child: Text("Dashboard")),
                 SizedBox(height: 30),
                 InkWell(
-                  onTap: () {
+                    onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => homepage()));
+                              builder: (context) => myaccounts()));
                     },
-                  child: Text("Logout")),
+                    child: Text("Edit Profile")),
+                SizedBox(height: 30),
+                InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myaccounts()));
+                    },
+                    child: Text("Enqiry History")),
+                SizedBox(height: 30),
+                InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myaccounts()));
+                    },
+                    child: Text("Invoice History")),
+                SizedBox(height: 30),
+                InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myaccounts()));
+                    },
+                    child: Text("Shipment History")),
+                SizedBox(height: 30),
+                InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myaccounts()));
+                    },
+                    child: Text("Address Book")),
+                SizedBox(height: 30),
+                InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => myaccounts()));
+                    },
+                    child: Text(
+                      "Change password",
+                      style: TextStyle(backgroundColor: Colors.transparent),
+                    )),
+                SizedBox(height: 30),
+                InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => homepage()));
+                    },
+                    child: Text("Logout")),
                 SizedBox(height: 30),
               ],
             ),
