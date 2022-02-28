@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:gcg_es/main.dart';
 
 class login extends StatelessWidget {
+  //login page
   const login({Key? key}) : super(key: key);
 
   @override
