@@ -16,7 +16,7 @@ class login extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: 50.0,
+              height: 60.0,
             ),
             Text(
               "Login",
